@@ -54,12 +54,12 @@ return(
     <>
     <Heading level='h3'>Register User</Heading>
   <Box horizontal={6}>
-    <Input label="Email" type='email' onChange={handleChange} name='email'/>
-    <Input label="Password" type='password' onChange={handleChange} name='password'/>
-    <Input label="FirstName" type='text' onChange={handleChange} name='firstname'/>
-    <Input label="LastName" type='text' onChange={handleChange} name='lastname'/>
-    <Input label="Address" type='text' onChange={handleChange} name='address'/>
-    <Input label="Mobile Number" type='tel' onChange={handleChange} name='mobilenumber'/>
+    <Input label="Email" type='email' onChange={handleChange} name='email' defaultValue={storeState.email}/>
+    <Input label="Password" type='password' onChange={handleChange} name='password' defaultValue={storeState.email}/>
+    <Input label="FirstName" type='text' onChange={handleChange} name='firstname' defaultValue={storeState.firstname}/>
+    <Input label="LastName" type='text' onChange={handleChange} name='lastname' defaultValue={storeState.lastname}/>
+    <Input label="Address" type='text' onChange={handleChange} name='address' defaultValue={storeState.address}/>
+    <Input label="Mobile Number" type='tel' onChange={handleChange} name='mobilenumber' defaultValue={storeState.mobilenumber}/>
     <div style={{marginTop:'2em'}}>
     <Button onClick={handleClick}>Submit</Button>
     </div>
